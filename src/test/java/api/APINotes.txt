@@ -1,0 +1,103 @@
+
+            API (Application Programming Interface)
+* What is API?
+    API provides interaction between applications.
+    API is an application without User Interface(UI).
+    APIs specify how one software program should interact with other software programs.
+
+* Assume an API as a Waiter at a Restaurant. As a waiter, the API takes a request from a client, takes that request to the
+database, fetches the requested data from the database and returns a response to the client.
+
+* Application/Client --> API Request --> Server/Data Source --> API Response
+
+* What is API testing?
+    API testing is done to check whether the API meets expectations in terms of functionality, reliability, performance,
+    and security of an application.
+    API testing doesn't concentrate on UI of the application.
+
+*   User Interface(UI)                          API                                         Database
+    - We can create data in the database.       - We can create data in the database.       - We can create data in the database.
+    - We can check whether data is in the       - We can check whether data is in the       - We can check whether data is in the
+    database or not as expected by using        database or not as expected by using        database or not as expected by using
+    UI Search Functionality.                    API Request.                                SQL Select Queries.
+
+* Every company creates their own APIs and earns money by selling the services
+
+* What is the difference between API and Web Services?
+    The only difference is that a Web Service creates interaction between two applications through the internet.
+    Desktop applications such as Microsoft Word use their own APIs which don’t need internet.
+    Note: All Web Services are APIs but all APIs are not Web Services.
+
+* What is HTTP?
+    HTTP stands for Hyper Text Transfer Protocol.
+    Communication between client computers and web servers is done by sending HTTP Requests and receiving HTTP Responses.
+    Clients are often browsers (Chrome, Edge, Safari), but they can be any type of program or device.
+    Servers are most often computers in the cloud.
+
+    Communication between clients and servers is done by requests and responses:
+    1. A client (a browser) sends an HTTP Request to web
+    2. A Web Server receives request
+    3. The server runs an application to process request
+    4. The server returns an HTTP Response (to browser)
+    5. The client (the browser) receives the response
+
+* What exactly needs to be verified in API Testing?
+    On API Testing we send a request to the API with the known data, and we analyze the response.
+        1) HTTP Status Codes
+        2) Data Accuracy
+
+* Common HTTP Status Codes
+ 1) 200 (OK) --> This is the standard response for successful HTTP requests.
+ 2) 201 (CREATED) --> This is the standard response for an HTTP request that resulted in an item being successfully created.
+ 3) 204 (NO CONTENT) This is the standard response for successful HTTP requests, where nothing is being returned in the response body.
+ 4) 400 (BAD REQUEST) The request cannot be processed because of bad request syntax, excessive size, or another client error.
+ 5) 403 (FORBIDDEN) The client does not have permission to access this resource.
+ 6) 404 (NOT FOUND) The resource could not be found at this time. It is possible it was deleted, or does not exist yet.
+ 7) 500 (INTERNAL SERVER ERROR) The generic answer for an unexpected failure if there is no more specific information available.
+
+* Tools used for API testing?
+    1. Postman is a popular API Tool that makes it easy for developers to create, share, test and document APIs.
+    2. SOAP UI stands for Simple Object Access Protocol.
+       - It is important for web applications to be able to communicate over the Internet.
+       - The best way to communicate between applications is over HTTP, because HTTP is supported by all internet browsers and servers.
+       - SOAP was created to accomplish this.
+       - SOAP provides a way or format to communicate between applications running on different operating systems, with different technologies
+       and programming languages.
+       - SOAP is a platform independent.
+       - SOAP is used XML Format.
+    3. REST/RESTful/RestAssured
+        - REST stands for REpresentational State Transfer.
+        - REST is making easier for systems to communicate with each other.
+        - In the REST architecture, clients send requests to retrieve or modify resources, and servers send responses to these requests.
+        - REST is used XML and JSON (JavaScript Object Notation) Format; therefore, it is more common than SOAP.
+    Note:
+        XML Format
+    <costumer>
+        <costumer_id> 1001 </costumer_id>
+        <costumer_name> John Doe </costumer_name>
+    </costumer>
+
+        JSON Format
+    {
+        "costumer_id": 1001
+        "costumer_name": John Doe
+    }
+
+* What are the HTTP Methods?
+    1. GET: This is used for fetching details from the server and is basically a read only operation. (Read)
+    2. POST: This method is used for the creation of new resources on the server. (Create)
+    3. PUT: This method is used to update the old/existing resource on the server or to replace the resource. (Update)
+    4. DELETE: This method is used to delete the resource on the server. (Delete)
+    5. PATCH: This is used for modifying the resource partially on the server.
+    The POST, GET, PUT, DELETE corresponds to the create, read, update, delete operations which are most commonly called CRUD Operations.
+
+* What does a REST request generally consist of?
+    1. HTTP methods like Get, Post, Put, Delete, Patch
+    2. Header: the client sends the type of content which will be received from the server.
+    3. Path (Endpoint/URL) to resource
+    4. Body
+
+* What is an API Endpoint?
+    The place that APIs send requests and where the resource lives, is called an endpoint.
+    When API developers create an API, they create public Endpoints (URL) and decide which Endpoint will run with which HTTP Request Methods.
+    Testers test every endpoint if they work as expected by using HTTP Request methods such as Get Post Put Delete.
