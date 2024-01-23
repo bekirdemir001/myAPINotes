@@ -2,7 +2,6 @@ package api.postrequests;
 
 import api.baseurls.RestfulHerokuAppBaseUrl;
 import api.testdata.RestfulHeroukuAppTestData;
-import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.Test;
 
