@@ -12,7 +12,6 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class RestfulHerokuApp_GetRequest04 extends RestfulHerokuAppBaseUrl {
-
     /*
     Given
         https://restful-booker.herokuapp.com/booking/303
@@ -74,5 +73,4 @@ public class RestfulHerokuApp_GetRequest04 extends RestfulHerokuAppBaseUrl {
         assertEquals("2021-03-03", jsonPath.getString("bookingdates.checkout"));
         assertEquals("Midnight Snack", jsonPath.getString("additionalneeds"));
     }
-
 }
