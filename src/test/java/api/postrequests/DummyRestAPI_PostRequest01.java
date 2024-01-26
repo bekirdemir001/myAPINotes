@@ -1,8 +1,8 @@
 package api.postrequests;
 
 import api.baseurls.DummyRestApiBaseUrl;
-import api.pojos.DummyRestApiDataPojo;
-import api.pojos.DummyRestApiResponsePojo;
+import api.pojos.dummyrestapipojos.DummyRestApiDataPojo;
+import api.pojos.dummyrestapipojos.DummyRestApiResponsePojo;
 import api.utilities.ObjectMapperUtils;
 import io.restassured.response.Response;
 import org.junit.Test;
@@ -41,7 +41,7 @@ public class DummyRestAPI_PostRequest01 extends DummyRestApiBaseUrl {
      */
 
     @Test
-    public void dummyRestAPI_PostRequest01(){
+    public void dummyRestAPI_PutRequest01(){
         //Set the URL
         spec.pathParam("first", "create");
 

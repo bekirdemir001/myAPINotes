@@ -1,5 +1,9 @@
-package api.pojos;
+package api.pojos.dummyrestapipojos;
 
+
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class DummyRestApiResponsePojo {
     private String status;
     private DummyRestApiDataPojo data;

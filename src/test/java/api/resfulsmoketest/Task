@@ -1,0 +1,29 @@
+
+    TASK
+1. Create a Booking using Post Request
+    {
+        "firstname" : "Julia",
+        "lastname" : "Roberts",
+        "totalprice" : 1940,
+        "depositpaid" : false,
+        "bookingdates" : {
+            "checkin" : "2020-02-02",
+            "checkout" : "2021-03-03"
+        },
+        "additionalneeds" : "Lunch"
+    }
+2. Find the Booking using Get Request
+3. Update the Booking using Put Request
+    {
+        "firstname" : "Antony",
+        "lastname" : "Hopkins",
+        "totalprice" : 123,
+        "depositpaid" : true,
+        "bookingdates" : {
+            "checkin" : "2018-01-01",
+            "checkout" : "2019-01-01"
+        },
+        "additionalneeds" : "Dinner"
+    }
+4. Delete the Booking using Delete Request
+5. Find the Booking again using Get Request
